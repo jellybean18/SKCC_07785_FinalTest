@@ -149,6 +149,25 @@ c. Create and grant user “training” with password “training” full access
 ![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/2-3.PNG?raw=true)
 ![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/2-4.PNG?raw=true)
 
+```
+[ 참고]
+1. test database 생성 => CREATE DATABASE test; EXIT;
+2. 쿼리파일전송
+3. Data import => mysql -u root -p test < ./authors.sql, mysql -u root -p test < ./posts.sql
+4. 권한부여
+  - GRANT ALL ON test.* TO 'training'@'%' IDENTIFIED BY 'training';
+  - GRANT ALL ON test.* TO 'training'@'localhost' IDENTIFIED BY 'training';
+  - FLUSH PRIVILEGES;
+5. training 계정으로 데이터 확인
+  - show databases;
+  - use test;
+  - show tables;
+  - desc authors;
+  - desc posts;
+  - select count(*) from authors limit 10;
+  - select count(*) from posts limit 10;
+```
+
 ## 3. Extract tables authors and posts from the database and create Hive tables
 ```
 a. Use Sqoop to import the data from authors and posts
@@ -166,6 +185,16 @@ g. Create posts as a managed table
 ![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/3-2-posts.PNG?raw=true)
 ![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/3-3-authors.PNG?raw=true)
 ![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/3-4-posts.PNG?raw=true)
+
+```
+[참고]
+training 계정으로 스쿱 임포트
+sqoop import --connect jdbc:mysql://172.31.4.133/test --username training --password training --table authors \
+--target-dir /authors --hive-import --create-hive-table --hive-table default.authors
+
+sqoop import --connect jdbc:mysql://172.31.4.133/test --username training --password training --table posts \
+--target-dir /posts --hive-import --create-hive-table --hive-table default.posts
+```
 
 ## 4. Create and run a Hive/Impala query. Generate the results dataset thatyou will use in the next step to export in MySQL
 ```
