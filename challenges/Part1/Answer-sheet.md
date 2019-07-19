@@ -28,5 +28,12 @@ e. Linux setup - v. List the command and output for yum repolist enabled
 ![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-a-11.PNG?raw=true)
 ![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-a-12.PNG?raw=true)
 ![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-a-13.PNG?raw=true)
-
+```
+f. Linux setup - vi. List the /etc/passwd entries for training (only in master name node)
+```
+![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-a-15_etc_passwd.PNG?raw=true)
+```
+g. Linux setup - vii. List the /etc/group entries for skcc (only in master name node)
+```
+![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-a-15_etc_group.PNG?raw=true)
 
