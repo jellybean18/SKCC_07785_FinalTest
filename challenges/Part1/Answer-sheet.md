@@ -169,6 +169,37 @@ g. Create posts as a managed table
 
 ## 4. Create and run a Hive/Impala query. Generate the results dataset thatyou will use in the next step to export in MySQL
 ```
-a. Create a query that counts the number of posts each author has created.
-  i. The id column in authors matches the author_id key in posts.
+작성자와 작성자가 작성한 게시물의 개수를 쿼링하여 /results 에 저장하도록 아래 쿼리를 실행하였으나 실패함
+insert overwrite directory '/results'
+row format delimited fields terminated by '\t'
+select A.id,
+       A.first_name AS fname,
+       A.last_name AS lname,
+       B.num_posts AS num_posts
+  from authors A
+ inner join ( select author_id, count(author_id) AS num_posts
+                from posts P
+               group by author_id ) B
+    on A.id = B.author_id
 ```
+![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/4-1.PNG?raw=true)
+
+## 5. Export the data from above query to MySQL
+```
+a. Create a MySQL table and name it “results”
+b. The table should be created under the database “test”
+ => 아래 쿼리 실행
+  CREATE TABLE `results` (
+  `id` int NOT NULL,
+  `fname` varchar(255) default NULL,
+  `lname` varchar(255) default NULL,
+  `num_posts` int default 0
+  );
+```
+![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/5-1.PNG?raw=true)
+```
+c. Finally, export into MySQL the results of your query
+ => 아래 스쿱 export를 실행하였으나 실패
+ sqoop export --connect jdbc:mysql://localhost/test --username training --password training --table results --export-dir /results --input-fields-terminated-by '\t'
+```
+![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/5-2.PNG?raw=true)
