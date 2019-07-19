@@ -162,8 +162,8 @@ e. You are free to use whatever database in Hive
 f. Create authors as an external table
 g. Create posts as a managed table
 ```
-![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/3-1.PNG?raw=true)
-![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/3-1.PNG?raw=true)
-![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/3-3.PNG?raw=true)
-![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/3-4.PNG?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/3-1-authors.PNG?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/3-2-posts.PNG?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/3-3-authors.PNG?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/3-4-posts.PNG?raw=true)
 
