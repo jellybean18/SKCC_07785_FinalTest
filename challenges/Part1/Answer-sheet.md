@@ -6,20 +6,20 @@ a. Linux setup - i. Add the following linux accounts to all nodes
 ![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-a-1.PNG?raw=true)
 ![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-a-2.PNG?raw=true)
 ```
-b. Linux setup - ii. List the your instances by IP address and DNS name (don’t use /etc/hosts for this)
+a. Linux setup - ii. List the your instances by IP address and DNS name (don’t use /etc/hosts for this)
 ```
 ![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-a-3.PNG?raw=true)
 ![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-a-4.PNG?raw=true)
 ```
-c. Linux setup - iii. List the Linux release you are using
+a. Linux setup - iii. List the Linux release you are using
 ```
 ![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-a-5.PNG?raw=true)
 ```
-d. Linux setup - iv. List the file system capacity for the first node (master node)
+a. Linux setup - iv. List the file system capacity for the first node (master node)
 ```
 ![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-a-6.PNG?raw=true)
 ```
-e. Linux setup - v. List the command and output for yum repolist enabled
+a. Linux setup - v. List the command and output for yum repolist enabled
 ```
 ![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-a-7.PNG?raw=true)
 ![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-a-8.PNG?raw=true)
@@ -29,17 +29,39 @@ e. Linux setup - v. List the command and output for yum repolist enabled
 ![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-a-12.PNG?raw=true)
 ![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-a-13.PNG?raw=true)
 ```
-f. Linux setup - vi. List the /etc/passwd entries for training (only in master name node)
+a. Linux setup - vi. List the /etc/passwd entries for training (only in master name node)
 ```
 ![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-a-15_etc_passwd.PNG?raw=true)
 ```
-g. Linux setup - vii. List the /etc/group entries for skcc (only in master name node)
+a. Linux setup - vii. List the /etc/group entries for skcc (only in master name node)
 ```
 ![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-a-15_etc_group.PNG?raw=true)
 ```
-h. Linux setup - viii. List output of the flowing commands: 1. getent group skcc, 2. getent passwd training
+a. Linux setup - viii. List output of the flowing commands: 1. getent group skcc, 2. getent passwd training
 ```
 ![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-a-16.PNG?raw=true)
+```
+b. Install a MySQl server
+```
+![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-b-1.PNG?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-b-2.PNG?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-b-3.PNG?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-b-4.PNG?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-b-5.PNG?raw=true)
+```
+c. Install Cloudera Manager
+```
+![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-c-1.PNG?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-c-2.PNG?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-c-3.PNG?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-c-4.PNG?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-c-5.PNG?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-c-6.PNG?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-c-7.PNG?raw=true)
+
+
+## 2. In MySQL create the sample tables that will be used for the rest of the test
+
 
 
 
