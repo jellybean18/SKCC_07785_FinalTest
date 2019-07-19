@@ -36,4 +36,10 @@ f. Linux setup - vi. List the /etc/passwd entries for training (only in master n
 g. Linux setup - vii. List the /etc/group entries for skcc (only in master name node)
 ```
 ![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-a-15_etc_group.PNG?raw=true)
+```
+h. Linux setup - viii. List output of the flowing commands: 1. getent group skcc, 2. getent passwd training
+```
+![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-a-16.PNG?raw=true)
+
+
 
