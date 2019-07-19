@@ -139,8 +139,11 @@ c. Install Cloudera Manager
 ## 2. In MySQL create the sample tables that will be used for the rest of the test
 
 ```
-a. Linux setup - i. Add the following linux accounts to all nodes
+a. In MySQL, create a database and name it “test”
+b. Create 2 tables in the test databases: authors and posts.
+c. Create and grant user “training” with password “training” full access to the test database. 
+   (It is ok if you give training full access to the entire MySQL database)
 ```
-![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/1-a-1.PNG?raw=true)
-
-
+![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/2-1.PNG?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/2-2.PNG?raw=true)
+![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/2-3.PNG?raw=true)
