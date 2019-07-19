@@ -167,3 +167,8 @@ g. Create posts as a managed table
 ![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/3-3-authors.PNG?raw=true)
 ![photo.PNG](https://github.com/jellybean18/SKCC_07785_FinalTest/blob/master/Images/3-4-posts.PNG?raw=true)
 
+## 4. Create and run a Hive/Impala query. Generate the results dataset thatyou will use in the next step to export in MySQL
+```
+a. Create a query that counts the number of posts each author has created.
+  i. The id column in authors matches the author_id key in posts.
+```
